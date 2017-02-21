@@ -3,11 +3,13 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: The constraint is defined as: If two values are locked in the two specific boxes, there is no other box in the same unit that will have the same two values. 
+In Naked Twins Stretagy, by using this constraint, we can elimate the aforementioned two values from other boxes in the same unit using constraint propagation. 
+In constraint propagation, reduce_puzzle() method, we can add nakedTwins method in addition to eliminate() and only_choice().
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: Constraint propagation such as eliminate(), only_choice() and naked_Twins() are used to solve for row units, column units and square units. In this problem, diagonal units are added to the unit list along with the previous units for the constrain propagation (reduce_puzzle())
 
 ### Install
 
